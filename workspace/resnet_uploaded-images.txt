@@ -1,0 +1,5 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+* Doesn't Check the Results Dictionary because 'get_pet_labels' hasn't been defined.

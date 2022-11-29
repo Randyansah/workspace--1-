@@ -1,0 +1,48 @@
+Command Line Arguments:
+     dir = pet_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 1 key-value pairs.
+Below are 1 of them:
+ 1 key:           Great_dane_05320.jpg  label:                 great dane
+{'Great_dane_05320.jpg': ['great dane', 'great dane', 1]}
+
+     MATCH:
+
+          Great_dane_05320.jpg: 
+Real:                 great dane   Classifier:                     great dane
+
+ NOT A MATCH:
+
+# Total Images 1 # Matches: 1 # NOT Matches: 0
+{'Great_dane_05320.jpg': ['great dane', 'great dane', 1, 1, 1]}
+
+     MATCH:
+
+          Great_dane_05320.jpg: 
+Real:                 great dane   Classifier:                     great dane  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+# Total Images 1 # Matches: 1 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  1  N Dog Images:  1  N NotDog Images:  0 
+Pct Corr dog: 100.0 Pct Corr NOTdog:   0.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  1  N Dog Images:  1  N NotDog Images:  0 
+Pct Corr dog: 100.0 Pct Corr NOTdog:   0.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   1
+N Dog Images        :   1
+N Not-Dog Images    :   0
+pct_match: 100.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 100.0
+pct_correct_notdogs: 0.0
+** Total Elapsed Runtime:2.554284201727973e-05:0.0015325705210367838:0.09195423126220703***
