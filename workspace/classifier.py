@@ -15,6 +15,7 @@ alexnet = models.alexnet(pretrained=True)
 vgg16 = models.vgg16(pretrained=True)
 
 
+
 models = {'resnet': resnet18, 'alexnet': alexnet, 'vgg': vgg16}
 
 # obtain ImageNet labels
