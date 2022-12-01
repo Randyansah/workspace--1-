@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED: 26th November,2022                                  
-# REVISED DATE: 28th November,2022 
+# REVISED DATE: 1st December,2022 
 # Used sources such as Stackoverflow and github for research
 # PURPOSE: Create a function that retrieves the following 3 command line inputs 
 #          from the user using the Argparse Python module. If the user fails to 
@@ -43,7 +43,7 @@ def get_input_args():
     parser=argparse.ArgumentParser()
     
     # Create 3 command line arguments as mentioned above using add_argument() from ArguementParser method
-    parser.add_argument('--dir', type=str, default = 'pet_images', help='Image folder directory')
+    parser.add_argument('--dir', type=str, default = 'pet_images', help='Pet Image folder directory')
     parser.add_argument('--arch', type=str, default = 'vgg',help='Convolutional Neural Network(CNN) Model Architecture')
     parser.add_argument('--dogfile', type=str, default = 'dognames.txt',help='text file with inclusion of dog names')
     

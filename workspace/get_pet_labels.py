@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED: 26th November,2022                                 
-# REVISED DATE: 28th November,2022
+# REVISED DATE: 1st December,2022
 # PURPOSE: Create the function get_pet_labels that creates the pet labels from 
 #          the image's filename. This function inputs: 
 #           - The Image Folder as image_dir within get_pet_labels function and 
@@ -53,13 +53,15 @@ def get_pet_labels(image_dir):
 
            
             low_pet_image = in_files[idx].lower()
-            word_list_pet_image = low_pet_image.split("_")
             pet_name = " "
 
-            for word in word_list_pet_image:
-                if word.isalpha():
-                    pet_name += word + " "
-            pet_name = pet_name.strip()
+            for word in low_pet_image.split("_"):
+                if str(word).isalpha():
+                    pet_name =pet_name+ word + " "
+                else:
+                    print("String is not alpha numeric")
+                pet_name = pet_name.strip()    
+            
             if in_files[idx] not in results_dic:
                 results_dic[in_files[idx]] = [pet_name]
               

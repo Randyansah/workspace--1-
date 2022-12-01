@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED:  26th November,2022                               
-# REVISED DATE:  28th November,2022
+# REVISED DATE:  1st December,2022
 # Used sources such as Stackoverflow and github for research
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
@@ -80,5 +80,9 @@ def classify_images(images_dir, results_dic, model):
             results_dic[key].extend((model_label,1))
         else:
             results_dic[key].extend((model_label,0))
+    for key in results_dic:
+      print("\nFile Name:>>", key, "\nPet Image Label:>>", results_dic[key][0],
+          "\nClassifier Label:>>", results_dic[key][1], "\nMatch:>>",
+          results_dic[key][2])      
         
     print(results_dic)

@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED: 26th November,2022                                
-# REVISED DATE: 28th November,2022
+# REVISED DATE: 1st December,2022
 # Used sources such as Stackoverflow and github for research
 # PURPOSE: Create a function adjust_results4_isadog that adjusts the results 
 #          dictionary to indicate whether or not the pet image label is of-a-dog, 
