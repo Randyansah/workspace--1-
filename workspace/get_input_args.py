@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED: 26th November,2022                                  
-# REVISED DATE: 1st December,2022 
+# REVISED DATE: 4th December,2022 
 # Used sources such as Stackoverflow and github for research
 # PURPOSE: Create a function that retrieves the following 3 command line inputs 
 #          from the user using the Argparse Python module. If the user fails to 
@@ -50,5 +50,4 @@ def get_input_args():
     
     # Replace None with parser.parse_args() parsed argument collection that 
     # you created with this function 
-    
     return parser.parse_args()

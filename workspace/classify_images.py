@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED:  26th November,2022                               
-# REVISED DATE:  1st December,2022
+# REVISED DATE:  4th December,2022
 # Used sources such as Stackoverflow and github for research
 # PURPOSE: Create a function classify_images that uses the classifier function 
 #          to create the classifier labels and then compares the classifier 
@@ -68,10 +68,9 @@ def classify_images(images_dir, results_dic, model):
     """
     
     for key in results_dic:
-        model_label = ""
+        model_label = " "
         classified = classifier(images_dir+'/'+key,model)
         low_pet_image = classified.lower().strip()
-        #low_pet_image = low_pet_image.strip()
         model_label = low_pet_image 
         truth = results_dic[key][0]
         

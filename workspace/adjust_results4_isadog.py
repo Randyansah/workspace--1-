@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED: 26th November,2022                                
-# REVISED DATE: 1st December,2022
+# REVISED DATE: 4th December,2022
 # Used sources such as Stackoverflow and github for research
 # PURPOSE: Create a function adjust_results4_isadog that adjusts the results 
 #          dictionary to indicate whether or not the pet image label is of-a-dog, 
@@ -92,7 +92,5 @@ def adjust_results4_isadog(results_dic, dogfile):
                 if results_dic[key][1] in dog_name_dict:
                     results_dic[key].extend((0,1))
                 else:
-                    results_dic[key].extend((0,0))
-                    
-                     
+                    results_dic[key].extend((0,0))     
     print(results_dic)

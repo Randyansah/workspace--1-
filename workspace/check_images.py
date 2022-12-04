@@ -5,7 +5,7 @@
 # TODO 0: Add your information below for Programmer & Date Created.                                                                             
 # PROGRAMMER: Randy Kofi Ansah
 # DATE CREATED: 26th November,2022                                 
-# REVISED DATE: 1st December,2022
+# REVISED DATE: 4th December,2022
 # Used sources such as Stackoverflow and github for research
 # PURPOSE: Classifies pet images using a pretrained CNN model, compares these
 #          classifications to the true identity of the pets in the images, and
@@ -124,7 +124,7 @@ def main():
     hour_time=(tot_time/3600)
     minute_time=((tot_time%3600)/60)
     time_seconds=((tot_time%3600)%60)
-    print("** Total Elapsed Runtime:>>H:{}: M:{}: S:{}<<***".format(hour_time,minute_time,time_seconds))
+    print("** Total Elapsed Runtime:>>H:{0}: M:{1}: S:{2}<<***".format(hour_time,minute_time,time_seconds))
 
     
 
